@@ -37,13 +37,13 @@ Query-based transformer has shown great potential in constructing long-range att
 
 |         |  #Frame | Veh_L2 | Ped_L2 | Cyc_L2  | Mean   |
 |---------|---------|--------|--------|---------|---------|
-| [CenterFormer](voxelnet/waymo_centerformer.py)| 1       |   69.4     |  67.7      |   70.2      |  69.1    |
-| [CenterFormer deformable](voxelnet/waymo_centerformer_deformable.py)| 1       |   69.7     |  68.3      |   68.8      |  69.0    |
-| [CenterFormer](voxelnet/waymo_centerformer_multiframe_2frames.py)| 2       |   71.7     |  73.0      |   72.7      |  72.5    |
-| [CenterFormer deformable](voxelnet/waymo_centerformer_multiframe_deformable_2frames.py)| 2       |   71.6     |  73.4      |   73.3      |  72.8    |
-| [CenterFormer deformable](voxelnet/waymo_centerformer_multiframe_deformable_4frames.py)| 4       |   72.9     |  74.2      |   72.6      |  73.2    |
-| [CenterFormer deformable](voxelnet/waymo_centerformer_multiframe_deformable_8frames.py)| 8       |   73.8     |  75.0      |   72.3      |  73.7    |
-| [CenterFormer deformable](voxelnet/waymo_centerformer_multiframe_deformable_16frames.py)| 16      |   74.6     |  75.6      |   72.7      |  74.3    |
+| [CenterFormer](configs/waymo/voxelnet/waymo_centerformer.py)| 1       |   69.4     |  67.7      |   70.2      |  69.1    |
+| [CenterFormer deformable](configs/waymo/voxelnet/waymo_centerformer_deformable.py)| 1       |   69.7     |  68.3      |   68.8      |  69.0    |
+| [CenterFormer](configs/waymo/voxelnet/waymo_centerformer_multiframe_2frames.py)| 2       |   71.7     |  73.0      |   72.7      |  72.5    |
+| [CenterFormer deformable](configs/waymo/voxelnet/waymo_centerformer_multiframe_deformable_2frames.py)| 2       |   71.6     |  73.4      |   73.3      |  72.8    |
+| [CenterFormer deformable](configs/waymo/voxelnet/waymo_centerformer_multiframe_deformable_4frames.py)| 4       |   72.9     |  74.2      |   72.6      |  73.2    |
+| [CenterFormer deformable](configs/waymo/voxelnet/waymo_centerformer_multiframe_deformable_8frames.py)| 8       |   73.8     |  75.0      |   72.3      |  73.7    |
+| [CenterFormer deformable](configs/waymo/voxelnet/waymo_centerformer_multiframe_deformable_16frames.py)| 16      |   74.6     |  75.6      |   72.7      |  74.3    |
 
 The training and evaluation configs of the above models are provided in [Configs](configs/waymo/README.md).
 
