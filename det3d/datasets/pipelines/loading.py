@@ -115,6 +115,7 @@ class LoadPointCloudFromFile(object):
 
             lidar_path = Path(info["lidar_path"])
             points = read_file(str(lidar_path), painted=res["painted"])
+            res["lidar"]["points_num"] = points.shape[0]
 
             sweep_points_list = [points]
             sweep_times_list = [np.zeros((points.shape[0], 1))]

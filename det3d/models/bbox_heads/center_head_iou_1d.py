@@ -160,12 +160,15 @@ class CenterHeadIoU_1d(nn.Module):
 
     def forward(self, x, *kwargs):
         ret_dicts = []
-
-        y = self.shared_conv(x["ct_feat"].float())
-
-        for task in self.tasks:
-            ret_dicts.append(task(x, y))
-
+        if isinstance(x,list):
+            for idx, task in enumerate(self.tasks):
+                y = self.shared_conv(x[idx]["ct_feat"].float())
+                ret_dicts.append(task(x[idx], y))
+        else:
+            y = self.shared_conv(x["ct_feat"].float())
+            for idx, task in enumerate(self.tasks):
+                ret_dicts.append(task(x, y))
+                
         return ret_dicts
 
     def _sigmoid(self, x):
