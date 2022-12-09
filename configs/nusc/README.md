@@ -12,6 +12,6 @@
 |         |  NDS    | mAP    |
 |---------|---------|--------|
 | [CenterFormer](nuscenes_centerformer_separate_detection_head.py)| 68.0     |  62.7      |
-| [CenterFormer deformable](nuscenes_centerformer_deformable_separate_detection_head.py)| 67.9     |  62.5      |
+| [CenterFormer deformable](nuscenes_centerformer_deformable_separate_detection_head.py)| 68.4     |  63.0      |
 
 
