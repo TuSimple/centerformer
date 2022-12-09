@@ -20,6 +20,7 @@ year = {2022}
 
 ## NEWS
 [2022-12-09] Add support for multi-task head and nuScenes training configs. 
+
 [2022-09-30] CenterFormer source code is released. 
 
 ## Abstract
@@ -58,7 +59,7 @@ The training and evaluation configs of the above models are provided in [Configs
 Please refer to [INSTALL](docs/INSTALL.md) to set up libraries needed for distributed training and sparse convolution.
 
 ## Training and Evaluation
-Please refer to [WAYMO](docs/WAYMO.md) to prepare the data, training and evaluation.
+Please refer to [WAYMO](docs/WAYMO.md) and [nuScenes](docs/NUSC.md) to prepare the data, training and evaluation.
 
 
 ## Acknowlegement
