@@ -345,7 +345,7 @@ class Deform_Transformer(nn.Module):
             out_self_attention_list = []
         if pos_embedding is not None:
             center_pos_embedding = pos_embedding(center_pos)
-        reference_points = center_pos[:, :, None, :].repeat(1, 1, self.levels, 1)
+        reference_points = center_pos[:, :, None, :2].repeat(1, 1, self.levels, 1)
         for i, (self_attn, cross_attn, ff) in enumerate(self.layers):
             if self.out_attention:
                 if center_pos_embedding is not None:
